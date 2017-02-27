@@ -28,9 +28,9 @@ To start the webpack-dev-server:
 npm start
 ```
 
-To run serv:
+To run the api express server that is used so that our webpack-dev-server can proxy api calls through it:
 ```
-npm start
+npm run apiServer
 ```
 ## Running the tests
 
