@@ -1,0 +1,23 @@
+.app-box {
+    width: 100%;
+}
+.chat-box-container {
+    margin: auto;
+    width: 80%;
+    border: 1px solid black;
+    height: 500px;
+}
+
+.chat-box {
+    height: 90%;
+    /*border-bottom: 1px solid black;*/
+}
+
+.input-area {
+    height: 10%;
+}
+
+.message-area {
+    width: 100%;
+    height: 100%;
+}
