@@ -12,17 +12,19 @@
     "cleverbot": "^1.0.1",
     "express": "^4.14.1",
     "fetch": "^1.1.0",
+    "immutable": "^3.8.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "redux": "^3.6.0",
-    "redux-saga": "^0.14.3"
+    "redux-saga": "^0.14.3",
+    "rxjs": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "apiServer": "nodemon ./api-calls/api-server.js"
+    "apiServer": "nodemon ./src/api-calls/api-server.js"
   },
   "proxy": "http://localhost:8081"
 }
