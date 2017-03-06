@@ -1,6 +1,6 @@
 # Project Title
 
-This is a React based application that uses the Cleverbot api so that you can have a conversation with a chat bot. The heavy lifting of the app is done with Axios API calls along with state management using Redux.
+This is a React based application that uses the Cleverbot api so that you can have a conversation with a chat bot. The heavy lifting of the app is done with Axios API calls.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development purposes.
