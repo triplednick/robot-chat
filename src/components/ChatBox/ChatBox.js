@@ -13,9 +13,9 @@ class ChatBox extends Component {
     super(props);
     this.callServer = this.callServer.bind(this);
 
-    this.setState({
+    this.state = {
       messages: List([])
-    });
+    };
   }
   /**
  * Make an axios api call and return the promise
@@ -23,6 +23,9 @@ class ChatBox extends Component {
  * @return { Promise } - A promise object that will eventually contain our response message.
  */
   callServer(message) {
+    const self = this;
+    const list = this.state.messages;
+    
     return axios
       .post('/message', {
         message: message
@@ -31,17 +34,26 @@ class ChatBox extends Component {
         const data = response.data;
         const cleverOutput = data.clever_output;
 
-        console.log(cleverOutput);
+        let newList = list.push({
+          text: message,
+          sender: 'me'
+        }).push({
+          text: cleverOutput,
+          sender: 'bot'
+        });
+        
+        self.setState({
+          messages: newList
+        });
       })
       .catch(function(error) {
-        console.log('in util class with error');
         console.log(error);
       });
   }
   render() {
     return (
       <div className="app-box">
-        <MessageBox />
+        <MessageBox messages={this.state.messages}/>
         <InputBox callServer={this.callServer} />
       </div>
     );

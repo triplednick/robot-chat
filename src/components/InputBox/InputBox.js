@@ -17,9 +17,7 @@ class InputBox extends Component {
     e.preventDefault();
 
     const inputMessage = this.state.inputMessage;
-
-    console.log(inputMessage);
-    //this.callServer(inputMessage);
+    this.callServer(inputMessage);
   }
   handleChange(e) {
     this.setState({ inputMessage: e.target.value });
@@ -30,7 +28,7 @@ class InputBox extends Component {
         <form onSubmit={this.handleSubmit}>
           <div className="text-area">
             <label>
-              <textarea
+              <input type="text"
                 value={this.state.inputMessage}
                 onChange={this.handleChange}
                 className="message-area"

@@ -3,6 +3,7 @@ import './MessageBox.css';
 
 import Message from '../Message/Message';
 
+/*
 const messages = [
   {
     sender: 'nick',
@@ -29,10 +30,12 @@ const messages = [
     text: 'message 6'
   }
 ];
+*/
 
-const MessageBox = () => {
+const MessageBox = (props) => {
   let i = 0;
-
+  const { messages } = props;
+  
   const getKey = () => {
     const key = Date.now() + i++;
     return key;
