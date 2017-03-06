@@ -42,7 +42,6 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [React](https://facebook.github.io/react/) - Framework used(scaffolded with create-react-app)
 * [Axios](https://github.com/mzabriskie/axios) - Used for API calls
 * [Cleverbot](https://www.cleverbot.com/api/) - Used to generate AI statements to facilitate a real conversation.
 * [Redux](http://redux.js.org/) - Used to handle the applications state.
